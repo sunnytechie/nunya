@@ -12,7 +12,7 @@
 			<section class="section full-width-bg gray-bg var2">
 
 				<div class="row">
-					@include('snippets.news')
+					{{-- @include('snippets.news') --}}
 
 					@include('snippets.event')
 				</div>

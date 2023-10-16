@@ -14,7 +14,7 @@
                 <div class="issue-content">
 
                     <h2>The Igwe</h2>
-                    <p>Every indigene of NAC shall belong to either the AGE GRADE System or the WOMEN GUILD.</p>
+                    <p>Our Igwe is the custodian of our culture and history, bringing direction and counsel  when needed. He's the symbol of how far we have come as a people.</p>
 
                     <a class="button big button-arrow" href="#">Read more</a>
 

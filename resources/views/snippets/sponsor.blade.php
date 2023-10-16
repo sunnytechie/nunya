@@ -30,7 +30,7 @@
                         <div class="animate-onscroll">
 
                             <div class="post-image">
-                                <img src="{{ asset('assets/img/165x100_brand1.jpg') }}" alt="">
+                                <img src="{{ asset('assets/img/nunya/brand001.png') }}" alt="">
                             </div>
 
                         </div>
@@ -46,7 +46,7 @@
         </div>
 
     </div>
-    
+
 {{-- Jump link to follow --}}
 <div id="follow"></div>
 </section>

@@ -16,16 +16,16 @@
                     <li>
                         <div class="date">
                             <span>
-                                <span class="day">25</span>
+                                <span class="day">28</span>
                                 <span class="month">DEC</span>
                             </span>
                         </div>
 
                         <div class="event-content">
-                            <h6><a href="event-post-v2.html">Vestibulum ante ipsum primis</a></h6>
+                            <h6><a href="#">NDU General Meeting</a></h6>
                             <ul class="event-meta">
-                                <li><i class="icons icon-clock"></i> 4:00 pm - 6:00 pm</li>
-                                <li><i class="icons icon-location"></i> 340 W 50th St.New York</li>
+                                <li><i class="icons icon-clock"></i> 10:00 am - 12:00 pm</li>
+                                <li><i class="icons icon-location"></i> Central School Nunya</li>
                             </ul>
                         </div>
                     </li>
@@ -33,7 +33,7 @@
 
                 </ul>
 
-                <a href="portfolio-single-sidebar.html" class="button big button-arrow">Join Now</a>
+                <a href="#" class="button big button-arrow">Join Now</a>
 
             </div>
 
@@ -47,16 +47,16 @@
                 <li>
                     <div class="date">
                         <span>
-                            <span class="day">25</span>
-                            <span class="month">DEC</span>
+                            <span class="day">--</span>
+                            <span class="month">Jan</span>
                         </span>
                     </div>
 
                     <div class="event-content">
-                        <h6><a href="event-post-v2.html">Donec porta diam eu</a></h6>
+                        <h6><a href="event-post-v2.html">Next Meeting</a></h6>
                         <ul class="event-meta">
-                            <li><i class="icons icon-clock"></i> 4:00 pm - 6:00 pm</li>
-                            <li><i class="icons icon-location"></i> 340 W 50th St.New York</li>
+                            <li><i class="icons icon-clock"></i> -:-- -- - -:-- pm</li>
+                            <li><i class="icons icon-location"></i> Coming up soon...</li>
                         </ul>
                     </div>
                 </li>
