@@ -8,7 +8,7 @@
             <div class="issue-block">
 
                 <div class="issue-image">
-                    <img src="{{ asset('assets/img/nunya/igwe.jpg') }}" alt="">
+                    <img src="{{ asset('assets/img/nunya/www.jpg') }}" alt="">
                 </div>
 
                 <div class="issue-content">
@@ -29,7 +29,7 @@
             <div class="issue-block">
 
                 <div class="issue-image">
-                    <img src="{{ asset('assets/img/nunya/2.jpg') }}" alt="">
+                    <img src="{{ asset('assets/img/nunya/igwe.jpg') }}" alt="">
                 </div>
 
                 <div class="issue-content">
