@@ -55,7 +55,7 @@
 
                 <div class="issue-content">
 
-                    <h2>Our Believe</h2>
+                    <h2>Our Belief</h2>
                     <p>We believe that our history is our heritage, and our heritage our pride.</p>
 
                     <a class="button big button-arrow" href="#">Read more</a>
@@ -76,7 +76,7 @@
 
                 <div class="issue-content">
 
-                    <h2>Our Value</h2>
+                    <h2>Our Values</h2>
                     <p>We shall uphold honesty, integrity and pragmatism, and recognize and celebrate...</p>
 
                     <a class="button big button-arrow" href="#">Read more</a>
