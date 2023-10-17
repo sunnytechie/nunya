@@ -29,7 +29,7 @@
             <div class="issue-block">
 
                 <div class="issue-image">
-                    <img src="{{ asset('assets/img/nunya/igwe.jpg') }}" alt="">
+                    <img src="{{ asset('assets/img/about/3.png') }}" alt="">
                 </div>
 
                 <div class="issue-content">
@@ -50,7 +50,7 @@
             <div class="issue-block">
 
                 <div class="issue-image">
-                    <img src="{{ asset('assets/img/nunya/3.jpg') }}" alt="">
+                    <img src="{{ asset('assets/img/about/2.png') }}" alt="">
                 </div>
 
                 <div class="issue-content">
@@ -71,7 +71,7 @@
             <div class="issue-block">
 
                 <div class="issue-image">
-                    <img src="{{ asset('assets/img/nunya/4.jpg') }}" alt="">
+                    <img src="{{ asset('assets/img/about/1.png') }}" alt="">
                 </div>
 
                 <div class="issue-content">
