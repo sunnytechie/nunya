@@ -3,7 +3,7 @@
 
     <div class="row">
 
-        <div class="col-lg-3 col-md-3 col-sm-12 animate-onscroll">
+        <div class="col-lg-4 col-md-4 col-sm-12 animate-onscroll">
 
             <div class="issue-block">
 
@@ -24,7 +24,7 @@
 
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-12 animate-onscroll">
+        <div class="col-lg-4 col-md-4 col-sm-12 animate-onscroll">
 
             <div class="issue-block">
 
@@ -36,7 +36,8 @@
 
                     <h2>About NDU</h2>
                     <p>Every indigene of NAC shall belong to either the AGE GRADE System or the WOMEN GUILD.</p>
-
+                    <br> {{-- Remove Later --}}
+                    <br> {{-- Remove Later --}}
                     <a class="button big button-arrow" href="#">Read more</a>
 
                 </div>
@@ -45,7 +46,7 @@
 
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-12 animate-onscroll">
+        {{-- <div class="col-lg-3 col-md-3 col-sm-12 animate-onscroll">
 
             <div class="issue-block">
 
@@ -64,9 +65,9 @@
 
             </div>
 
-        </div>
+        </div> --}}
 
-        <div class="col-lg-3 col-md-3 col-sm-12 animate-onscroll">
+        <div class="col-lg-4 col-md-4 col-sm-12 animate-onscroll">
 
             <div class="issue-block">
 
@@ -78,7 +79,8 @@
 
                     <h2>Our Values</h2>
                     <p>We shall uphold honesty, integrity and pragmatism, and recognize and celebrate...</p>
-
+                    <br> {{-- Remove Later --}}
+                    <br> {{-- Remove Later --}}
                     <a class="button big button-arrow" href="#">Read more</a>
 
                 </div>
