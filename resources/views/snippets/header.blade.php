@@ -1,157 +1,141 @@
+<style>
+  #logo-img img {
+    width: 45px;
+    height: 45px;
+  }
+
+  img {
+    width: auto !important;
+  }
+
+  @media (max-width: 991px)
+    {
+      #menu-button {
+        height: auto !important;
+        padding-top: 4px !important;
+      }
+    }
+
+  #main-header {
+    height: auto;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+    .justify-content-between {
+        justify-content: space-between;
+    }
+
+    .align-items-center {
+        align-items: center !important;
+    }
+</style>
 <!-- Container -->
 <div class="container">
 
-    <!-- Header -->
-    <header id="header">
+  <!-- Header -->
+  <header id="header">
 
-        <!-- Main Header -->
-        <div id="main-header">
+      <!-- Main Header -->
+      <div id="main-header">
 
-            <div class="container">
+          <div class="container">
 
-            <div class="row">
+          <div class="d-flex justify-content-between align-items-center">
 
 
 
-                <!-- Logo -->
-                <div id="logo" class="col-lg-3 col-md-3 col-sm-3" style="padding-left: 18px">
+              <!-- Logo -->
+              <div id="logo-img" class="d-flex justify-content-between align-items-center">
+                <div id="menu-button" style="border: none; outline: none; margin-right: 10px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" font-weight="bold" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                  {{-- <span>Menu</span> --}}
+                </div>
 
-                    <a href="/">
-                         <img height="55" src="{{ asset('assets/img/docs/ndu.png') }}" alt="Logo"> {{--<span style="color: #fff; weight: 700; font-size: 22px">NDU</span> --}}
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="/">
+                        <img style="height: 40px; width: 40px" src="{{ asset('assets/img/docs/nunya.png') }}" alt="Logo">
+                  </a>
+                  <div style="margin-left: 4px">
+                    <span style="color: #fff; weight: 700; font-size: 20px; font-style:italic">Nunya</span>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /Logo -->
+
+
+              <div class="btn-group" style="margin-top: 4px">
+                    <a href="/login" class="btn btn-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"v color="#fff" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                      </svg>
                     </a>
-
-                </div>
-                <!-- /Logo -->
+              </div>
 
 
 
-                <!-- Main Quote -->
-                <div class="col-lg-5 col-md-4 col-sm-4">
+          </div>
 
-                    <blockquote>We believe that our history is our heritage, <br>and our heritage our pride.</blockquote>
+          </div>
 
-                </div>
-                <!-- /Main Quote -->
-
+      </div>
+      <!-- /Main Header -->
 
 
-                <!-- Newsletter -->
-                <div class="col-lg-4 col-md-5 col-sm-5">
+      <!-- Lower Header -->
+      <div id="lower-header">
 
-                    <form id="newsletter" action="http://velikorodnov.com/html/candidate/php/newsletter-form.php" method="POST">
+          <div class="container">
 
-                        <h5><strong>Sign up</strong> for email updates</h5>
-                        <div class="newsletter-form">
+          {{-- <div id="menu-button">
+              <div>
+              <span></span>
+              <span></span>
+              <span></span>
+              </div>
+              <span>Menu</span>
+          </div> --}}
 
-                            <div class="newsletter-email" style="width: 100%">
-                                <input style="border-top-right-radius: 0; border-bottom-right-radius: 0;" type="text" name="newsletter-email" placeholder="Email address">
-                            </div>
+          <ul id="navigation">
 
+              <!-- Dashboard -->
+              <li class="home-button current-menu-item">
 
+                  <a href="/"><i class="icons icon-home"></i></a>
 
-                            <div class="newsletter-submit">
-                                <input style="border-top-left-radius: 0; border-bottom-left-radius: 0;" type="submit" value="">
-                                <i class="icons icon-right-thin"></i>
-                            </div>
+              </li>
 
-                        </div>
-
-                    </form>
-
-                </div>
-                <!-- /Newsletter -->
-
-
-
-            </div>
-
-            </div>
-
-        </div>
-        <!-- /Main Header -->
-
-
-        <!-- Lower Header -->
-        <div id="lower-header">
-
-            <div class="container">
-
-            <div id="menu-button">
-                <div>
-                <span></span>
-                <span></span>
-                <span></span>
-                </div>
-                <span>Menu</span>
-            </div>
-
-            <ul id="navigation">
-
-                <!-- Dashboard -->
-                <li class="home-button current-menu-item">
-
-                    <a href="/"><i class="icons icon-home"></i></a>
-
-                </li>
-
-                <li ><a href="/">Home</a></li>
-                <li ><a href="/#about">About Us</a></li>
-                <li ><a href="/#event">Events</a></li>
-                <li ><a href="/#news">News</a></li>
-                <li ><a href="/#sponsors">Sponsors</a></li>
-                <li ><a href="/#getinvolve">Get Involved</a></li>
-                <li ><a href="/#follow">Follow Us</a></li>
+              {{-- <li ><a href="/">Home</a></li> --}}
+              <li ><a href="/#event">Our Events</a></li>
+              <li ><a href="/#news">News/Articles</a></li>
+              <li ><a href="/#about">About Us</a></li>
+              <li ><a href="{{ route('membership') }}">Membership</a></li>
+              {{-- <li ><a href="/#sponsors">Sponsors</a></li> --}}
+              <li ><a href="{{ route('contact') }}">Contact Us</a></li>
 
 
 
-                <!-- Donate -->
-                <li class="donate-button ">
-                    <a href="#">Donate Today</a>
-                </li>
-                <!-- /Donate -->
+              <!-- Donate -->
+              <li class="donate-button ">
+                  <a href="#">Donate</a>
+              </li>
+              <!-- /Donate -->
 
-            </ul>
+          </ul>
 
-            </div>
+          </div>
 
-        </div>
-        <!-- /Lower Header -->
-
-
-    </header>
-    <!-- /Header -->
-
-    <section id="content">
-
-        <!-- Section -->
-        <section class="section full-width-bg full-width-slider-section">
-
-            <div class="row">
-
-                <div class="col-lg-12 col-md-12 col-sm-12">
-
-                    <!-- Revolution Slider -->
-                    @include('snippets.revolutionslider')
-                    <!-- /Revolution Slider -->
-
-                </div>
+      </div>
+      <!-- /Lower Header -->
 
 
-                <div class="col-lg-12 col-md-12 col-sm-12">
-
-                    @include('snippets.involve')
-
-                </div>
-
-            </div>
-
-        </section>
-        <!-- /Section -->
-
-        <!-- Section -->
-        @include('snippets.about')
-        <!-- /Section -->
-
-    </section>
+  </header>
+  <!-- /Header -->
 
 </div>

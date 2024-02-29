@@ -10,7 +10,7 @@
     </div>
 
     <div class="banner-wrapper">
-        <a class="banner animate-onscroll" href="#">
+        <a class="banner animate-onscroll" href="{{ route('membership') }}">
             <i class="icons icon-user"></i>
             <h4>Memebership</h4>
             <p>Register and join us.</p>
@@ -20,7 +20,7 @@
     <div class="banner-wrapper">
         <a class="banner animate-onscroll" href="#">
             <i class="icons icon-check"></i>
-            <h4>Volunteer</h4>
+            <h4>Projects</h4>
             <p>Let grow our community together.</p></p>
         </a>
     </div>
@@ -32,13 +32,13 @@
             <form>
 
                 <input id="donate-amount-1" type="radio" name="donate-amount">
-                <label for="donate-amount-1">$5</label>
+                <label for="donate-amount-1">5k</label>
 
                 <input id="donate-amount-2" type="radio" name="donate-amount">
-                <label for="donate-amount-2">$25</label>
+                <label for="donate-amount-2">10k</label>
 
                 <input id="donate-amount-3" type="radio" name="donate-amount">
-                <label for="donate-amount-3">$100</label>
+                <label for="donate-amount-3">50k</label>
 
                 <input type="submit" value="Donate">
 

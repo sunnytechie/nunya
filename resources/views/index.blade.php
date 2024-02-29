@@ -2,9 +2,13 @@
 @extends('layouts.app')
     @section('content')
 
+<!-- Container -->
+<div class="container">
 
-    @include('snippets.header')
-    {{-- @include('snippets.slider') --}}
+    <!-- Slider and about content -->
+    @include('snippets.slider&more')
+
+</div>
 
 		<div class="container">
 

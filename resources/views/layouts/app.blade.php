@@ -13,7 +13,7 @@
         <meta property="og:type" content="Greater Nunya" />
         <meta property="og:title" content="{{ config('app.name') }}" />
         <meta property="og:description" content="We are united in love for peace, unity, and progress" />
-        <meta property="og:image" content="{{ asset('assets/img/docs/ndu.png') }}" />
+        <meta property="og:image" content="{{ asset('assets/img/docs/nunya.png') }}" />
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="200" />
         <meta property="og:image:type" content="image/png" />
@@ -28,7 +28,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/docs/ndu.png') }}">
+		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/docs/nunya.png') }}">
 
 		<!-- Stylesheets -->
 		<link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
@@ -42,6 +42,9 @@
 		<link href="{{ asset('assets/css/cloud-zoom.css') }}" rel="stylesheet" type="text/css" />
 		<link href="{{ asset('assets/css/colorpicker.css') }}" rel="stylesheet" type="text/css">
 		<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css">
+
+        <!-- Include SweetAlert2 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.min.css">
 
 
 		<!--[if IE 9]>
@@ -74,57 +77,65 @@
 		<script src="{{ asset('assets/js/jquery.queryloader2.min.js') }}"></script>
 
 		<script type="text/javascript">
-		$('html').addClass('no-fouc');
+            $('html').addClass('no-fouc');
 
-		$(document).ready(function(){
+            $(document).ready(function(){
 
-			$('html').show();
+                $('html').show();
 
-			var window_w = $(window).width();
-			var window_h = $(window).height();
-			var window_s = $(window).scrollTop();
+                var window_w = $(window).width();
+                var window_h = $(window).height();
+                var window_s = $(window).scrollTop();
 
-			$("body").queryLoader2({
-				backgroundColor: '#f2f4f9',
-				barColor: '#63b2f5',
-				barHeight: 4,
-				percentage:false,
-				deepSearch:true,
-				minimumTime:1000,
-				onComplete: function(){
+                $("body").queryLoader2({
+                    backgroundColor: '#f2f4f9',
+                    barColor: '#63b2f5',
+                    barHeight: 4,
+                    percentage:false,
+                    deepSearch:true,
+                    minimumTime:1000,
+                    onComplete: function(){
 
-					$('.animate-onscroll').filter(function(index){
+                        $('.animate-onscroll').filter(function(index){
 
-						return this.offsetTop < (window_s + window_h);
+                            return this.offsetTop < (window_s + window_h);
 
-					}).each(function(index, value){
+                        }).each(function(index, value){
 
-						var el = $(this);
-						var el_y = $(this).offset().top;
+                            var el = $(this);
+                            var el_y = $(this).offset().top;
 
-						if((window_s) > el_y){
-							$(el).addClass('animated fadeInDown').removeClass('animate-onscroll');
-							setTimeout(function(){
-								$(el).css('opacity','1').removeClass('animated fadeInDown');
-							},2000);
-						}
+                            if((window_s) > el_y){
+                                $(el).addClass('animated fadeInDown').removeClass('animate-onscroll');
+                                setTimeout(function(){
+                                    $(el).css('opacity','1').removeClass('animated fadeInDown');
+                                },2000);
+                            }
 
-					});
+                        });
 
-				}
-			});
+                    }
+                });
 
-		});
+            });
 		</script>
+
+
 
 	</head>
 
 	<body class="sticky-header-on tablet-sticky-header">
 
             <!-- Page Content -->
-            <main>
-                @yield('content')
-            </main>
+                <div class="container">
+                    {{-- @include('snippets.slider') --}}
+                    @include('snippets.header')
+
+                </div>
+
+                <div class="container">
+                    @yield('content')
+                </div>
 
             @include('snippets.footer')
 
@@ -181,6 +192,36 @@
 
 		<!-- Main Script -->
 		<script type="text/javascript" src="{{ asset('assets/js/script.js') }}"></script>
+
+        <!-- Include SweetAlert2 JS (including the required dependencies) -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.2.0/dist/promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        @if (session()->has('success'))
+            swal.fire({
+                'icon': 'success',
+                'title': 'Successful',
+                'text': "{{ session()->get('success') }}",
+            })
+        @endif
+
+        @if (session()->has('status'))
+            swal.fire({
+                'icon': 'warning',
+                'title': 'Warning',
+                'text': "{{ session()->get('status') }}",
+            })
+        @endif
+
+        @if (session()->has('failed'))
+            swal.fire({
+                'icon': 'error',
+                'title': 'Failed',
+                'text': "{{ session()->get('failed') }}",
+            })
+        @endif
+    </script>
 
 
 		<!--[if lt IE 9]>
