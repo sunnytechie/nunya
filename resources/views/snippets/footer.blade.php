@@ -1,3 +1,8 @@
+@php
+    $about = \App\Models\About::first();
+    $about = $about->about_us ?? '<p>We shall uphold honesty, integrity and pragmatism, and recognize and celebrate the dignity of individuals through labour..<br><br>
+                        We believe that our history is our heritage, and our heritage our pride.</p>';
+@endphp
 <!-- Footer -->
 <footer id="footer">
 
@@ -12,8 +17,7 @@
 
                     <h4>About Us</h4>
 
-                    <p>We shall uphold honesty, integrity and pragmatism, and recognize and celebrate the dignity of individuals through labour..<br><br>
-                        We believe that our history is our heritage, and our heritage our pride.</p>
+                    {!! $about !!}
 
                 </div>
 
@@ -24,9 +28,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
 
                         <ul class="menu">
-                            <li><a href="/#about">About</a></li>
-                            <li><a href="/#event">Events</a></li>
-                            <li><a href="/#news">News</a></li>
+                            <li><a href="{{ route('pages.about') }}">About</a></li>
+                            <li><a href="{{ route('pages.news') }}">News</a></li>
                             <li><a href="{{ route('contact') }}">Contact us</a></li>
                         </ul>
 
@@ -35,10 +38,10 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
 
                         <ul class="menu">
-                            <li><a href="#">Find events</a></li>
+                            <li><a href="{{ route('pages.events') }}">Find events</a></li>
                             <li><a href="{{ route('membership') }}">Register Membership</a></li>
-                            <li><a href="#">Donate</a></li>
-                            <li><a href="#">Projects</a></li>
+                            <li><a href="{{ route('pages.donation') }}">Donate</a></li>
+                            <li><a href="{{ route('pages.projects') }}">Projects</a></li>
                         </ul>
 
                     </div>
@@ -49,7 +52,8 @@
 
                     <h4>Subscribe </h4>
 
-                        <form id="newsletter" action="http://velikorodnov.com/html/candidate/php/newsletter-form.php" method="POST">
+                        <form id="newsletter" action="{{ route('subscribe') }}" method="POST">
+                            @csrf
 
                             <h5><strong>Sign up</strong> for email updates</h5>
                             <div class="newsletter-form">

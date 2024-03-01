@@ -4,7 +4,7 @@
 
         <div class="col-sm-9">
 
-            <form id="newsletter2" action="http://velikorodnov.com/html/candidate/php/newsletter-form.php" method="POST">
+            <form id="newsletter2" action="{{ route('subscribe') }}" method="POST">
 
                 <div class="newsletter-form">
 

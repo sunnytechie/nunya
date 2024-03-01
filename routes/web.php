@@ -30,9 +30,29 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/membership', [App\Http\Controllers\PagesController::class, 'membership'])->name('membership');
 Route::post('/membership', [App\Http\Controllers\PagesController::class, 'membershipStore'])->name('membership.store');
 
+//subscribe
+Route::post('/subscribe', [App\Http\Controllers\PagesController::class, 'subscribe'])->name('subscribe');
+
+//donation
+Route::post('/donation', [App\Http\Controllers\PagesController::class, 'donationStore'])->name('donation.store');
+
 //contact page
 Route::get('/contact', [App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
 Route::post('/contact', [App\Http\Controllers\PagesController::class, 'contactStore'])->name('contact.store');
+
+//pages
+Route::prefix('pages')->group(function () {
+    //news
+    Route::get('/news', [App\Http\Controllers\PagesController::class, 'news'])->name('pages.news');
+    //about us
+    Route::get('/about', [App\Http\Controllers\PagesController::class, 'about'])->name('pages.about');
+    //events
+    Route::get('/events', [App\Http\Controllers\PagesController::class, 'events'])->name('pages.events');
+    //donation
+    Route::get('/donation', [App\Http\Controllers\PagesController::class, 'donation'])->name('pages.donation');
+    //projects
+    Route::get('/projects', [App\Http\Controllers\PagesController::class, 'projects'])->name('pages.projects');
+});
 
 Route::group(['prefix' => 'dashboard', 'middleware' => ['auth', 'admin']], function () {
     Route::get('/', [AdminController::class, 'index'])->name('dashboard');

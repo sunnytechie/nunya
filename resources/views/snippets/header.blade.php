@@ -105,25 +105,37 @@
           <ul id="navigation">
 
               <!-- Dashboard -->
-              <li class="home-button current-menu-item">
+              <li class="home-button @if (Route::currentRouteName() == 'home')
+              current-menu-item
+              @endif">
 
                   <a href="/"><i class="icons icon-home"></i></a>
 
               </li>
 
               {{-- <li ><a href="/">Home</a></li> --}}
-              <li ><a href="/#event">Our Events</a></li>
-              <li ><a href="/#news">News/Articles</a></li>
-              <li ><a href="/#about">About Us</a></li>
-              <li ><a href="{{ route('membership') }}">Membership</a></li>
+              <li class="@if (Route::currentRouteName() == 'pages.events')
+              current-menu-item
+              @endif"><a href="{{ route('pages.events') }}">Our Events</a></li>
+              <li class="@if (Route::currentRouteName() == 'pages.news')
+              current-menu-item
+              @endif"><a href="{{ route('pages.news') }}">News/Articles</a></li>
+              <li class="@if (Route::currentRouteName() == 'pages.about')
+              current-menu-item
+              @endif"><a href="{{ route('pages.about') }}">About Us</a></li>
+              <li class="@if (Route::currentRouteName() == 'membership')
+              current-menu-item
+              @endif"><a href="{{ route('membership') }}">Membership</a></li>
               {{-- <li ><a href="/#sponsors">Sponsors</a></li> --}}
-              <li ><a href="{{ route('contact') }}">Contact Us</a></li>
-
-
+              <li class="@if (Route::currentRouteName() == 'contact')
+              current-menu-item
+              @endif"><a href="{{ route('contact') }}">Contact Us</a></li>
 
               <!-- Donate -->
-              <li class="donate-button ">
-                  <a href="#">Donate</a>
+              <li class="donate-button @if (Route::currentRouteName() == 'pages.donation')
+              current-menu-item
+              @endif">
+                  <a href="{{ route('pages.donation') }}">Donate</a>
               </li>
               <!-- /Donate -->
 
