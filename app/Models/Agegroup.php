@@ -10,4 +10,9 @@ class Agegroup extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'start', 'end'];
+
+    public function members()
+    {
+        return $this->hasMany(Member::class);
+    }
 }

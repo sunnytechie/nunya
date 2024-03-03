@@ -22,10 +22,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="mt-1 mb-3">2</h1>
+                                        <h1 class="mt-1 mb-3">{{ $members->count(); }}</h1>
                                         <div class="mb-0">
                                             <span class="text-danger"> <i
-                                                    class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+                                                    class="mdi mdi-arrow-bottom-right"></i> {{ $lastWeekMembers->count(); }} </span>
                                             <span class="text-muted">Since last week</span>
                                         </div>
                                     </div>
@@ -43,10 +43,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="mt-1 mb-3">14</h1>
+                                        <h1 class="mt-1 mb-3">{{ $users->count(); }}</h1>
                                         <div class="mb-0">
                                             <span class="text-success"> <i
-                                                    class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
+                                                    class="mdi mdi-arrow-bottom-right"></i> {{ $lastWeekUsers->count(); }} </span>
                                             <span class="text-muted">Since last week</span>
                                         </div>
                                     </div>
@@ -66,10 +66,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="mt-1 mb-3">21</h1>
+                                        <h1 class="mt-1 mb-3">{{ $news_Events->count(); }}</h1>
                                         <div class="mb-0">
                                             <span class="text-success"> <i
-                                                    class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
+                                                    class="mdi mdi-arrow-bottom-right"></i> {{ $lastWeekNews_Events->count(); }} </span>
                                             <span class="text-muted">Since last week</span>
                                         </div>
                                     </div>
@@ -87,10 +87,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h1 class="mt-1 mb-3">64</h1>
+                                        <h1 class="mt-1 mb-3">{{ $projects->count(); }}</h1>
                                         <div class="mb-0">
                                             <span class="text-danger"> <i
-                                                    class="mdi mdi-arrow-bottom-right"></i> -2.25% </span>
+                                                    class="mdi mdi-arrow-bottom-right"></i> {{ $lastWeekProjects->count(); }} </span>
                                             <span class="text-muted">Since last week</span>
                                         </div>
                                     </div>
